@@ -24,8 +24,19 @@ code {
   padding:1em;
 }
 
+.formikRegister {
+  height: 1000px;
+}
+
+.flex-properties{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .error{ 
   color:rgb(153, 6, 6);
+  font-style: oblique;
 }
 .errorClass {
   color:rgb(153, 6, 6);
@@ -49,12 +60,12 @@ button:hover {
   font-weight: bold;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.6);
 }
-
-
 label{
   width: 100%;
+  color: purple;
+  margin-top: 10px;
 }
-input {
+input[type="text"],input[type="password"],input[type="email"],textarea,select {
   width: 100%;
   border-radius: 5px;
   padding:5px;
@@ -63,4 +74,35 @@ input {
 }
 input:hover{
   box-shadow: inset 0px 0px 5px 5px lightcyan;
+}
+.radio-input {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color:navy !important;
+}
+
+.radio-input>label{
+  color: yellowgreen;
+  font-weight: bold;
+}
+
+input[type="radio"] {
+  margin-right: 15px;
+}
+
+.userLink {
+  color:darkblue;
+  cursor: pointer;
+  /* padding:5px 15px; */
+  margin:10px;
+}
+.userLink:hover {
+  text-decoration: underline dotted 1px;
+  box-shadow:inset 0px 0px 2px 2px lightgray;
+}
+
+.userLink:active {
+  color: rgb(78, 78, 136);
+  box-shadow:inset 0px 0px 2px 2px gray;
 }
